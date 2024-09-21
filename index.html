@@ -13,14 +13,23 @@
             background-color: #f4f4f9;
         }
 
-        /* Header styling */
-        header {
-            background-color: #FF6F00;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-bottom: 20px;
-        }
+		/* Logo styling */
+		.logo {
+			width: 100px; /* Adjust the size of the logo */
+			height: auto;
+			display: block;
+			margin: 0 auto 10px; /* Centers the logo and adds margin below */
+		}
+
+		/* Header styling (already exists) */
+		header {
+			background-color: #FF6F00;
+			color: white;
+			text-align: center;
+			padding: 20px 0; /* Increased padding to make space for the logo */
+			margin-bottom: 20px;
+		}
+
 
         /* Container styling */
         .container {
@@ -78,9 +87,11 @@
 <body>
 
 <header>
+    <img src="bjym_logo.png" alt="Logo" class="logo">
     <h1>Mahashakti Kendras Overview</h1>
     <p>A detailed overview of Mahashakti Kendras, Shakti Kendras, and Booths</p>
 </header>
+
 
 <div class="container">
     <!-- Moodabidri Taluka Section -->
