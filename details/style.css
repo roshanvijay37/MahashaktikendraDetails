@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header styling */
+header {
+    background-color: #FF6F00;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Details section styling */
+.details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #FF6F00;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Styling for Shakti Kendras list */
+.shakti-kendras {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shakti-kendras li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid #FF6F00;
+    border-radius: 4px;
+}
+
+.shakti-kendras li:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FF6F00;
+    color: white;
+    margin-top: 20px;
+}

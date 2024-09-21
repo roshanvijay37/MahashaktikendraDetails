@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahashakti Kendras Overview</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #FF6F00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Taluka section styling */
+        .taluka-section {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Styling for individual list items */
+        li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 4px solid #FF6F00;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Button styling */
+        .btn-fetch {
+            background-color: #FF6F00;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-fetch:hover {
+            background-color: #e65b00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mahashakti Kendras Overview</h1>
+    <p>A detailed overview of Mahashakti Kendras, Shakti Kendras, and Booths</p>
+</header>
+
+<div class="container">
+    <!-- Moodabidri Taluka Section -->
+    <section class="taluka-section">
+        <h2>Moodabidri Taluka - Mahashakti Kendras</h2>
+        <ul>
+            <li>1) Shirthadi <button class="btn-fetch" onclick="openKendraPage('Shirthadi')">View Details</button></li>
+            <li>2) Moodbidri <button class="btn-fetch" onclick="openKendraPage('Moodbidri')">View Details</button></li>
+            <li>3) Putthige <button class="btn-fetch" onclick="openKendraPage('Putthige')">View Details</button></li>
+        </ul>
+    </section>
+
+    <!-- Mulki Taluka Section -->
+    <section class="taluka-section">
+        <h2>Mulki Taluka - Mahashakti Kendras</h2>
+        <ul>
+            <li>4) Haleyangadi <button class="btn-fetch" onclick="openKendraPage('Haleyangadi')">View Details</button></li>
+            <li>5) Mulki <button class="btn-fetch" onclick="openKendraPage('Mulki')">View Details</button></li>
+            <li>6) Kinnigoli <button class="btn-fetch" onclick="openKendraPage('Kinnigoli')">View Details</button></li>
+            <li>7) Aravattha Eradane Thokuru <button class="btn-fetch" onclick="openKendraPage('Aravattha Eradane Thokuru')">View Details</button></li>
+        </ul>
+    </section>
+
+    <!-- Bajpe Taluka Section -->
+    <section class="taluka-section">
+        <h2>Bajpe Taluka - Mahashakti Kendras</h2>
+        <ul>
+            <li>8) Bajpe <button class="btn-fetch" onclick="openKendraPage('Bajpe')">View Details</button></li>
+        </ul>
+    </section>
+
+    <!-- Overall Stats Section -->
+    <section class="taluka-section">
+        <h2>Overall Stats</h2>
+        <p id="stats"></p>
+    </section>
+</div>
+
+<script>
+    // Sample data for statistics
+    const previousShaktiKendras = 56;
+    const currentShaktiKendras = 75;
+    const previousBooths = 221;
+    const currentBooths = 219;
+
+    // Displaying statistics data
+    document.getElementById("stats").innerHTML = `
+        <strong>Total Shakti Kendras:</strong> Increased from ${previousShaktiKendras} to ${currentShaktiKendras}.<br>
+        <strong>Total Booths:</strong> Reduced from ${previousBooths} to ${currentBooths}.
+    `;
+
+    // Function to open the detailed page of the selected Mahashakti Kendra
+    function openKendraPage(kendraName) {
+        // Redirect to the respective Kendra's details page
+        window.location.href = `details/${kendraName}.html`;
+    }
+</script>
+
+</body>
+</html>
